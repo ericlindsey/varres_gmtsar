@@ -1,0 +1,13 @@
+# the variable resolution resampler is very unstable and produces extremely variable results. Had to play with some parameters to get this to work "nicely" - ie. as you would visually expect the data to be resampled.
+
+# for track 23:
+run decompose.py -i D023_detrend_mm.grd.nc3 -t 22 -maxsize 500 -nseg 2 -var -minsize 30
+
+# for track 132:
+run decompose.py -i A132_detrend_mm.grd.nc3 -t 22 -maxsize 500 -nseg 2 -var -minsize 30
+
+# for track 28L:
+run decompose.py -i D028L_detrend_mm_nc3.grd -t 12 -maxsize 1000 -nseg 2 -var -minsize 30
+
+# for track 29L:
+run decompose.py -i D029L_detrend_mm.grd.nc3 -t 30 -maxsize 500 -nseg 2 -var -minsize 30
